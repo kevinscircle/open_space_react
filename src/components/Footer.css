@@ -1,0 +1,116 @@
+footer {
+    text-align: center;
+    min-height: 350px;
+    padding-top: 10px;
+    background-color: #282828;
+    border-top: 6px solid #e78533;
+    color: #fff;
+}
+
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.footer-links li {
+
+    margin-right: 15px;
+    padding-bottom: 40px;
+    margin-top: 15px;
+
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.social-buttons-container {
+    min-height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-button {
+    transform: scale(0.75);
+    height: 75px;
+    width: 75px;
+    background-size: cover !important;
+    /*  why does it make it round to fit whole image */
+    transition: 0.3s ease;
+    margin: 14px 2px;
+    cursor: pointer;
+}
+
+.social-button:hover {
+    transform: scale(1);
+    transition: 0.3s cubic-bezier(0.3, 0.2, 0, 2.5);
+}
+
+.social-button.twitter-button {
+    background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/twitter-256.png") no-repeat center;
+}
+
+.social-button.facebook-button {
+    background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/facebook-256.png") no-repeat center;
+}
+
+.social-button.pinterest-button {
+    background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/pinterest-256.png") no-repeat center;
+}
+
+.social-button.insta-button {
+    background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/instagram-256.png") no-repeat center;
+}
+
+
+
+
+
+.footer-links-container {
+    display: flex;
+    max-width: 950px;
+    margin: 30px auto 80px;
+
+}
+
+.footer-links-container .footer-flex-column {
+    flex-grow: 1;
+    border-right: 1px solid #555;
+}
+
+.footer-links-container .footer-flex-column:last-child {
+    border: none;
+}
+
+.footer-links-container .footer-flex-column ul {
+    color: #aaa;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-links-container .footer-flex-column li {
+    margin: 15px;
+    color: #666;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    /* some how bullets appeared so had to hide  */
+    list-style-type: none;
+}
+
+.footer-links-container .footer-flex-column li:hover {
+    color: #999;
+}

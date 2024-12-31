@@ -1,0 +1,157 @@
+ :root {
+	--bgcolor: rgb(2, 0, 36);
+}
+
+
+
+.custom {
+	min-height: 15vh;
+	background: var(--bgcolor);
+	color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} 
+
+
+.custom-container{
+padding: 40px;
+
+
+}
+
+
+
+
+.custom-list {
+	list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+
+.custom-h1 {
+	font-size: 3rem;
+	position: relative;
+	text-transform: uppercase;
+	transition: all 300ms ease;
+	width: fit-content;
+	cursor: pointer;
+    /* need for bootstrap link headache  */
+    color: inherit;
+    padding-right: 150px;
+    /* because a link i need to force inline-block  */
+    display: inline-block 
+
+  
+}
+.custom-h1:hover {
+    /* the slant look */
+	transform: skew(9deg);
+}
+.custom-h1::before {
+	content: attr(data-name);
+	position: absolute;
+	top: 0;
+	left: -10px;
+	background: var(--bgcolor);
+	height: 2rem;
+	overflow: hidden;
+	transition: all 300ms ease;
+	padding-left: 10px;
+}
+.custom-h1:hover::before {
+	top: -3px;
+	left: 0px;
+	color: hotpink;
+  
+}
+
+.custom-h1::after {
+	content: "";
+	height: 2px;
+	width: 0;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	background: hotpink;
+	transition: all 300ms ease;
+ 
+}
+.custom-h1:hover::after {
+	width: 69%;
+	outline: 4px solid rgb(2, 0, 36);
+}
+
+
+
+
+
+
+/* hambuger menu  */
+
+.nav-menu-burger{
+    padding: 20px;
+
+}
+
+input[type = "checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .bar {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+  }
+  
+  .bar span {
+    position: absolute;
+    width: 45px;
+    height: 7px;
+    background: #f1faee;
+    border-radius: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    left: 0;
+  }
+  
+  .bar span.top {
+    top: 0;
+  }
+  
+  .bar span.middle {
+    top: 17px;
+  }
+  
+  .bar span.bottom {
+    bottom: 0;
+  }
+  
+  input[type]:checked ~ span.top {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 48px;
+    left: 5px;
+  }
+  
+  input[type]:checked ~ span.bottom {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    width: 48px;
+    bottom: -1px;
+    box-shadow: 0 0 10px #495057;
+  }
+  
+  input[type]:checked ~ span.middle {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+

@@ -1,0 +1,31 @@
+/*#region*/
+
+/*#endregion*/
+
+
+/*#region global*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merlo, georgia, serif';
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+   
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+@font-face{
+  font-family: "Merlo";
+  src: local("Merlo"), url("./assets/fonts/OTF/Merlo\ Regular.otf") format("opentype");
+  font-weight: normal;
+}
+/*#endregion*/
